@@ -1,0 +1,179 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 410vh;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+a,i{
+    cursor: pointer;
+}
+p.bit:hover span{
+    cursor: default;
+    text-decoration: underline;
+}
+    .login-box {
+      background-color: #fff;
+      width: 500px;
+      height: 800px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      visibility: hidden;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    .input-group input {
+      width: 80%;
+      padding: 12px 40px 12px 36px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+      transition: color 0.3s;
+      opacity: 0;
+    }
+
+    .input-group input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .input-group input:focus + i {
+      color: #007bff;
+      opacity: 1;
+    }
+
+    .password-wrapper {
+      position: relative;
+    }
+
+    .password-toggle {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .login-btn {
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-btn i {
+      margin-right: 8px;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 15px 0;
+      color: #999;
+      font-size: 13px;
+    }
+
+    .alt-login-btn {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .google-btn {
+      background: #fff;
+      border: 1px solid #ccc;
+      color: #444;
+    }
+
+    .apple-btn {
+      background: #000;
+      color: #fff;
+      border: none;
+    }
+
+    .text-small {
+      font-size: 12px;
+      text-align: center;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .text-small a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .forgot-password {
+      display: block;
+      text-align: right;
+      font-size: 12px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
+    .forgot-password a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .login-box .ad{
+      text-decoration: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      float: right;
+      font-size: larger;
+       color: steelblue;
+      font-weight: bold;
+    }
+    .login-box .ad:hover{
+      color: orangered;
+    }
+/*üye girişi bitiş

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sahibinden.com - Türkiye'nin Online İlan ve Alışveriş Sitesi</title>
+    <link rel="icon" href="Images/car-page/mini-imgs/favicon.ico">
+    <link rel="stylesheet" href="sahibindenMainPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="girispanel.css">
+</head>
+
+<body>
+ <!--kullanıcı giriş-->
+    <div class="login-box">
+  <a class="ad" href="#">X</a>
+ 
+  <h2>İlan vermek için giriş yapın</h2> 
+
+  <div class="input-group">
+    <input type="email" placeholder="E-posta adresi" />
+    <i class="fas fa-envelope"></i>
+  </div>
+
+  <div class="input-group password-wrapper">
+    <input type="password" id="passwordInput" placeholder="Şifre" />
+    <i class="fas fa-lock"></i>
+    <button class="password-toggle" onclick="togglePassword()">
+      <i class="far fa-eye" id="toggleIcon"></i>
+    </button>
+  </div>
+
+  <div class="forgot-password">
+    <a href="#"><i class="fas fa-unlock-alt"></i> Şifremi unuttum</a>
+  </div>
+
+  <button class="login-btn"><i class="fas fa-envelope"></i> E-posta ile giriş yap</button>
+
+  <div class="text-small">
+    Henüz hesabın yok mu? <a href="#">Hesap aç</a>
+  </div>
+
+  <div class="divider">VEYA</div>
+
+  <button class="alt-login-btn google-btn"><i class="fab fa-google"></i> Google ile giriş yap</button>
+  <button class="alt-login-btn apple-btn"><i class="fab fa-apple"></i> Apple ile giriş yap</button>
+
+  <div class="text-small">
+    <i class="fas fa-qrcode"></i> QR kod ile mobil uygulamadan <a href="#">giriş yap</a>
+  </div>
+
+  <div class="text-small">
+    Google veya Apple hesapları ile devam ederseniz <a href="#">Bireysel Hesap Sözleşmesi</a> ve <a href="#">Eklerini</a> kabul etmiş sayılırsınız.
+  </div>
+
+  <div class="text-small" style="margin-top: 5px;">
+    Bu site reCAPTCHA ile korunmaktadır. <a href="#">Google Gizlilik Politikası</a> ve <a href="#">Kullanım Koşulları</a> geçerlidir.
+  </div>
+</div>
+<!--kullanıcı girişi bitiş-->
+    <!--ilan divi-->
+    <div class="login-container" style="display: none;">
+        <h2>İlan vermek için giriş yapın</h2>
+        <input type="email" placeholder="E-posta adresi">
+        <div class="password-container">
+            <input type="password" placeholder="Şifre">
+            <button class="toggle-password">👁️</button>
+        </div>
+        <a href="#" class="forgot-password">Şifremi unuttum</a>
+        <button class="login-button">E-posta ile giriş yap</button>
+        <p class="signup-text">Henüz hesabın yok mu? <a href="#">Hesap aç ▸</a></p>
+
+        <div class="divider">VEYA</div>
+
+        <button class="google-button">Google ile giriş yap</button>
+        <button class="apple-button">Apple ile giriş yap</button>
+
+        <p class="qr-login">QR kod ile mobil uygulamadan <a href="#">giriş yap ▸</a></p>
+
+        <p class="info-text">
+            Google veya Apple kimliğinizle bir sonraki adıma geçmeniz halinde
+            <a href="#">Bireysel Hesap Sözleşmesi</a> ve
+            <a href="#">Ekleri</a>'ni kabul etmiş sayılırsınız.
+        </p>
+
+        <p class="captcha-text">
+            Bu site reCAPTCHA ile korunmaktadır.
+            <a href="#">Google Gizlilik Politikası</a> ve
+            <a href="#">Kullanım Koşulları</a> geçerlidir.
+        </p>
+    </div>
+
+    <div class="all-page">
+        <!--ilan divi bitiş-->
+        <!--Header Started-->
+        <header>
+
+            <div class="firstPiece">
+
+
+                <h2 title="sahibinden.com">sahibinden.com</h2>
+
+                <input type="text" placeholder="Kelime, ilan no veya  mağaza adı ile ara"
+                    title="Kelime, ilan no veya  mağaza adı ile ara"> <button> <i
+                        class="fa-solid fa-search"></i></button>
+                <h5 title="Detaylı Arama">Detaylı Arama</h5>
+                <i class="fas fa-xmark intX"> </i>
+
+            </div>
+            <div class="secondPiece">
+
+                <p><a href="#" title="Giriş Yap">Giriş Yap</a></p>
+                <p class="header-secondPiece-line">|</p>
+                <p><a href="#" title="Hesap Aç">Hesap Aç</a></p>
+                <button title="Ücretsiz* İlan Ver" class="girisBtn" >Ücretsiz* İlan Ver</button>
+
+            </div>
+
+
+        </header>
+        <!--Header Finished-->
+
+        <section>
+
+            <div class="all">
+
+                <div class="all-column">
+
+                    <div class="forColumn">
+
+                        <p class="vasita">Vasıta</p>
+
+                        <div class="categories">
+
+                            <ul class="menu">
+
+                                <ul class="menu-votes">
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Otomobil</a></li>
+                                        <span class="menu-number-span-votes">(442.345)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Arazi, SUV & Pickup</a></li>
+                                        <span class="menu-number-span-votes">(89.110)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Elektrikli Araçlar</a></li>
+                                        <span class="menu-number-span-votes">(9.085)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Motosiklet</a></li>
+                                        <span class="menu-number-span-votes">(148.237)</span>
+
+                                    </div>
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Minivan & Panelvan</a></li>
+                                        <span class="menu-number-span-votes">(86.628)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Ticari Araçlar</a></li>
+                                        <span class="menu-number-span-votes">(60.777)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Kiralık Araçlar</a></li>
+                                        <span class="menu-number-span-votes">(10.098)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Deniz Araçları</a></li>
+                                        <span class="menu-number-span-votes">(11.285)</span>
+
+                                    </div>
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Hasarlı Araçlar</a></li>
+                                        <span class="menu-number-span-votes">(4.896)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Karavan</a></li>
+                                        <span class="menu-number-span-votes">(6.022)</span>
+
+                                    </div>
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Klasik Araçlar</a></li>
+                                        <span class="menu-number-span-votes">(2.070)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Hava Araçları</a></li>
+                                        <span class="menu-number-span-votes">(29)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">ATV</a></li>
+                                        <span class="menu-number-span-votes">(3.103)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">UTV</a></li>
+                                        <span class="menu-number-span-votes">(543)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Engelli Plakalı Araçlar</a></li>
+                                        <span class="menu-number-span-votes">(199)</span>
+
+                                    </div>
+
+
+                                </ul>
+
+                            </ul>
+
+                        </div>
+
+                        <p class="allvasita">Tüm Vasıta Kategorileri</p>
+
+                        <p class="ilgiliKategoriler">İlgili Kategoriler</p>
+
+                        <div class="categories secondCat">
+
+                            <ul class="menu">
+
+                                <ul class="menu-votes">
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Oto Ekspertiz</a></li>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Oto Tamir & Servis</a></li>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Oto Kaporta & Boya</a></li>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Oto Temizlik</a></li>
+
+                                    </div>
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Oto Lastik ve Jant Tamiri</a></li>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Jant & Lastik</a></li>
+                                        <span class="menu-number-span-votes">(277.694)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Yedek Parça</a></li>
+                                        <span class="menu-number-span-votes">(2.178.291)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Kask, Kıyafet & Ekipman</a></li>
+                                        <span class="menu-number-span-votes">(28.535)</span>
+
+                                    </div>
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Yelken Donanımı</a></li>
+                                        <span class="menu-number-span-votes">(547)</span>
+
+                                    </div>
+
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Traktör</a></li>
+                                        <span class="menu-number-span-votes">(31.003)</span>
+
+                                    </div>
+                                    <div class="menu-votes-number">
+
+                                        <li><a href="#">Navigasyon Cihazları</a></li>
+                                        <span class="menu-number-span-votes">(365)</span>
+
+                                    </div>
+
+                                </ul>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="ilans">
+
+                        <div class="imgs">
+
+                            <div class="imgT"></div>
+                            <div class="dacia">
+
+                                <div class="imgTwo"><img src="Images/adds/third-ad.jpg" width="300px" height="157px">
+                                </div>
+                                <p>Dacia Servis</p>
+                                <button type="button">Keşfet</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="vitrin">
+
+                            <div class="vitrin-texts">
+
+                                <p>Vasıta Vitrin</p>
+                                <a href=""><span>Tüm Vitrin İlanlarını Göster</span></a>
+
+                            </div>
+
+                            <div class="all-cards">
+
+                                <div class="firstRow">
+                                    <a href="carPage.html">
+                                        <div class="card">
+
+                                            <img src="CodeImages/carOne/bmw-1.jpg" width="110px" height="83px">
+                                            <p>BWm</p>
+
+                                        </div>
+                                    </a>
+
+
+                                   <a href="carPage2.html">
+                                        <div class="card">
+
+                                            <img src="CodeImages/carTwo/car2-1.jpg" width="110px" height="83px">
+                                            <p>Togg</p>
+
+                                        </div>
+                                    </a>
+
+                                   <a href="carPage3.html">
+                                        <div class="card">
+
+                                            <img src="CodeImages/carTree/car3-3.jpg" width="110px" height="83px">
+                                            <p>EMSALSİZ CABRİO</p>
+
+                                        </div>
+                                    </a>
+
+                                    <a href="#">
+                                        <div class="card">
+
+                                            <img src="Images/ilan-card/doktordanrenault.jpg" width="110px" height="83px">
+                                            <p>DoktordanRenult</p>
+
+                                        </div>
+                                    </a>
+
+                                   <a href="#">
+                                        <div class="card">
+
+                                            <img src="Images/ilan-card/oldVW.jpg" width="110px" height="83px">
+                                            <p>EskiVW</p>
+
+                                        </div>
+                                    </a>
+
+                                   <a href="#">
+                                        <div class="card">
+
+                                            <img src="Images/ilan-card/satilikUno.jpg" width="110px" height="83px">
+                                            <p>SatilikUno</p>
+
+                                        </div>
+                                    </a>
+
+                                   <a href="#">
+                                        <div class="card">
+
+                                            <img src="Images/ilan-card/sahibindenfocus.jpg" width="110px" height="83px">
+                                            <p>Sahibindenfocus</p>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="secondRow">
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/secondRow/yamaha25tl.jpg" width="110px"
+                                            height="83px">
+                                        <p>65.000 TL EKS...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/secondRow/sahibindenTEVE.jpg" width="110px"
+                                            height="83px">
+                                        <p>SAHİBİNDEN TE...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/secondRow/tumbakimlari.jpg" width="110px"
+                                            height="83px">
+                                        <p>Tüm bakımları...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/secondRow/otomatikBG.jpg" width="110px"
+                                            height="83px">
+                                        <p>OTOMATİK 90BG...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/secondRow/2013modelPEUGOT.jpg" width="110px"
+                                            height="83px">
+                                        <p>2013 MODEL UY...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/secondRow/bmw116.jpg" width="110px" height="83px">
+                                        <p>BMW 116 1.SA...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/secondRow/degisensizDACİA.jpg" width="110px"
+                                            height="83px">
+                                        <p>DEĞİŞENSİZ TR...</p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="thirdRow">
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/thirdRow/1.4polo.jpg" width="110px" height="83px">
+                                        <p>1.4 POLO 100...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/thirdRow/firsatPEUGOT.jpg" width="110px"
+                                            height="83px">
+                                        <p>FIRSAT !! TEMİ...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/thirdRow/bayandantam.jpg" width="110px"
+                                            height="83px">
+                                        <p>Bayandan Tam...</p>
+
+                                    </div>
+
+                                    <a href="carPage.html" style="text-decoration: none;">
+                                        <div class="card">
+
+                                            <img src="Images/ilan-card/thirdRow/hatasizBMW.jpg" width="110px"
+                                                height="83px">
+                                            <p>HATASIZ DEĞİŞ...</p>
+
+                                        </div>
+                                    </a>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/thirdRow/sahibindenHonda.jpg" width="110px"
+                                            height="83px">
+                                        <p>SAHİBİNDEN HA...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/thirdRow/sahibinden508PEUGOT.jpg" width="110px"
+                                            height="83px">
+                                        <p>Sahibinden 50...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/thirdRow/ogretmenden.jpg" width="110px"
+                                            height="83px">
+                                        <p>Öğretmenden S...</p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="fourthRow">
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/fourthRow/hasarkayitsiz.jpg" width="110px"
+                                            height="83px">
+                                        <p>HASAR KAYTITS...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/fourthRow/degisensizOPEL.jpg" width="110px"
+                                            height="83px">
+                                        <p>DEĞİŞENSİZ 4...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/fourthRow/ilanimBuradaYerAlsin.png" width="110px"
+                                            height="83px">
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/fourthRow/hatasiznoya.jpg" width="110px"
+                                            height="83px">
+                                        <p>HATASIZ BOYAS...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/fourthRow/2023hatasizBMW.jpg" width="110px"
+                                            height="83px">
+                                        <p>2023 HATASIZ ...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/fourthRow/temizbakimli.jpg" width="110px"
+                                            height="83px">
+                                        <p>TEMİZ BAKIMLI...</p>
+
+                                    </div>
+
+                                    <div class="card">
+
+                                        <img src="Images/ilan-card/fourthRow/lancerEVO.jpg" width="110px" height="83px">
+                                        <p>Lancer evo</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="ilans-vitrin-down">
+
+                            <span>Oto360</span>
+
+                            <div class="down-menus">
+
+                                <div class="piece">
+
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+                                    <p>Araç <br>Değerleme</p>
+
+                                </div>
+
+                                <div class="piece">
+
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                    <p></i>Araç <br> Karşılaştırma</p>
+
+                                </div>
+
+                                <div class="piece">
+
+                                    <i class="fa-solid fa-wrench"></i>
+                                    <p>Araç Hasar <br> Sorgulama</p>
+
+                                </div>
+
+                                <div class="piece">
+
+                                    <i class="fa-solid fa-file"></i>
+                                    <p>Oto <br>Ekspertiz</p>
+
+                                </div>
+
+                                <div class="piece">
+
+                                    <i class="fa-solid fa-percent"></i>
+                                    <p>Kredi <br>Teklifleri</p>
+
+                                </div>
+
+                                <div class="piece">
+
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p>Sıfır Araç <br> Dünyası</p>
+
+                                </div>
+
+                                <div class="piece">
+
+                                    <i class="fa-solid fa-warehouse"></i>
+                                    <p>S-Aracım</p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="magaza-vitrin">
+
+                            <div class="magaza-vitrin-text">
+                                <span>Mağaza Vitrin</span>
+                            </div>
+
+                            <div class="all-vitrin-cards">
+
+                                <div class="marka-card">
+
+                                    <div class="marka-imgs">
+
+                                        <img src="Images/magaza-vitrin/turanmotors.png" width="95px" height="35px">
+
+                                    </div>
+
+                                    <p>TURAN MOTORS</p>
+
+                                </div>
+
+                                <div class="marka-card">
+
+                                    <div class="marka-imgs">
+
+                                        <img src="Images/magaza-vitrin/prestijAUTO.jpg" width="95px" height="35px">
+
+                                    </div>
+
+                                    <p>PRESTİJ AUTO</p>
+
+                                </div>
+
+                                <div class="marka-card">
+
+                                    <div class="marka-imgs">
+
+                                        <img src="Images/magaza-vitrin/magazamburadayeralsin.gif" width="95px"
+                                            height="35px">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="marka-card">
+
+                                    <div class="marka-imgs">
+
+                                        <img src="Images/magaza-vitrin/tamerilhan.png" width="95px" height="35px">
+
+                                    </div>
+
+                                    <p>TAMER İLHAN TI...</p>
+
+                                </div>
+
+                                <div class="marka-card">
+
+                                    <div class="marka-imgs">
+
+                                        <img src="Images/magaza-vitrin/otomerkezli.png" width="95px" height="35px">
+
+                                    </div>
+
+                                    <p>Otomerkezi Ela...</p>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="more-info">
+
+                            <div class="more-info-baslik">
+                                <span>Vasıta kategorisi hakkında daha fazla bilgi:</span>
+                            </div>
+
+                            <div class="more-info-text">
+
+                                <p>Ulaşım araçları çeşitlilik ve nitelik bakımından geniş bir alıcı profiline sahiptir.
+                                    Sadece kara ulaşımı kapsamında olan otomobil, bisiklet, motorsiklet, <br> kamyon,
+                                    tır,
+                                    otobüs, minibüs, tarım araçları veya ticari araçlar değil, hava ve deniz ulaşımı
+                                    için
+                                    değişik tür ticari ve özel araçlar bu kapsamda <br> değerlendirilmektedir. Gazete,
+                                    internet
+                                    ve diğer ilan yayınlama platformlarında her gün sayısız vasıta el değiştirmekte, en
+                                    çok
+                                    vasıta ilanları takip <br> edilmektedir. sahibinden.com kesintisiz ve güvenli
+                                    internet
+                                    alışveriş altyapısıyla araç ilanları yayını konusunda ülkemizin başta gelen referans
+                                    <br>
+                                    noktalarından biridir. İster alıcı ister satıcı olun, aradığınız ya da sunduğunuz
+                                    her
+                                    nitelik, tür ve biçimdeki vasıta ilanını bulabilir veya yayınlayabilirsiniz.
+                                </p>
+
+                            </div>
+
+                            <div class="end-piece">
+
+                                <p>Bu sayfa en son</p>
+                                <span>25 Mayıs 2025 12:55:04</span>
+                                <p>tarihinde güncellenmiştir.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="footer-all">
+
+
+                <div class="submenus">
+
+
+                    <ul class="submenu">
+
+                        <li class="submenu-baslik">Kurumsal</li>
+                        <ul>
+
+                            <li>Hakkımızda</li>
+                            <li>Sürdürebilirlik</li>
+                            <li>İnsan Kaynakları</li>
+                            <li>Haberler</li>
+                            <li>Site Haritası</li>
+                            <li>İletişim</li>
+
+                        </ul>
+
+                    </ul>
+
+                    <ul class="submenu">
+
+                        <li class="submenu-baslik">Hizmetlerimiz</li>
+                        <ul>
+
+                            <li>Doping</li>
+                            <li>S- Param Güvende</li>
+                            <li>Güvenli e-Ticaret (GeT)</li>
+                            <li>Toplu Ürün Girişi</li>
+                            <li>Reklam</li>
+                            <li>Mobil</li>
+                            <li>Auto King</li>
+
+                        </ul>
+
+                    </ul>
+
+                    <ul class="submenu">
+
+                        <li class="submenu-baslik">Mağazalar</li>
+                        <ul>
+
+                            <li>Neden Mağaza?</li>
+                            <li>Mağaza Açmak İstiyorum</li>
+
+                        </ul>
+
+                    </ul>
+
+                    <ul class="submenu">
+
+                        <li class="submenu-baslik">Gizlilik ve Kullanım</li>
+                        <ul>
+
+                            <li>Güvenli Alışverişin İpuçları</li>
+                            <li>Sözleşmeler ve Kurallar</li>
+                            <li>Hesap Sözleşmesi</li>
+                            <li>Kullanım Koşulları</li>
+                            <li>Kişisel Verilerin Korunması</li>
+                            <li>Çerez Yönetimi</li>
+                            <li>Yardım ve İşlem Rehberi</li>
+
+                        </ul>
+
+                    </ul>
+
+                    <ul class="submenu">
+
+                        <li class="submenu-baslik">Bizi Takip Edin</li>
+                        <ul>
+
+                            <li>Facebook</li>
+                            <li>Sözleşmeler ve Kurallar</li>
+                            <li>X</li>
+                            <li>Linkedin</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+
+                        </ul>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-submenus-down">
+
+                    <div class="pieces">
+
+                        <div class="left-piece">
+
+                            <div class="footer-musteri-hizmetleri">
+
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone-flip"></i>
+                                </div>
+
+                                <div class="musteri-hizmetleri-text">
+                                    <p>7/24 Müşteri Hizmetleri</p>
+                                    <span>0 850 222 44 44</span>
+                                </div>
+
+                            </div>
+
+                            <div class="footer-musteri-hizmetleri">
+
+                                <div class="icon">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </div>
+
+                                <div class="support-center">
+                                    <p>Yardım Merkezi</p>
+                                    <span>yardim.sahibinden.com</span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="right-piece">
+
+                            <div class="input">
+
+                                <p>Dil Seçimi (Language)</p>
+                                <span><img src="Images/footer/Flag_of_Turkey.svg.png" width="24px" height="16px"> Türkçe
+                                    (Turkish)</span>
+
+                            </div>
+
+                            <div class="trgo">
+                                <img src="Images/footer/trGO.png" width="42px" height="42px">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="end-page">
+
+                        <div class="primary-row">
+
+                            <div class="dashed">
+
+                                <p>sahibinden.com'da yer alan kullanıcıların oluşturduğu tüm içerik, görüş ve bilgilerin
+                                    doğruluğu, eksiksiz ve değişmez olduğu, yayınlanması ile ilgili yasal yükümlülükler
+                                    içeriği
+                                    oluşturan kullanıcıya <br> aittir. Bu içeriğin, görüş ve bilgilerin yanlışlık,
+                                    eksiklik
+                                    veya
+                                    yasalarla düzenlenmiş kurallara aykırılığından sahibinden.com hiçbir şekilde sorumlu
+                                    değildir. Sorularınız için ilan sahibi ile irtibata <br> geçebilirsiniz.</p>
+
+                            </div>
+
+                            <div class="etbis">
+                                <img src="Images/footer/etbis.jpg" width="80px" height="93px">
+                            </div>
+
+                        </div>
+
+                        <div class="end-page-end-text"
+                            style="display: flex; gap: 370px; position: relative; bottom: 20px;">
+
+                            <p style="font-size: 11px; font-weight: 500; letter-spacing: 0.1px; color: #555555;">
+                                Copyright © 2000-2025 sahibinden.com</p>
+                            <span style="font-size: 11px; font-weight: 500; letter-spacing: 0.1px; color: #555555;">(*)
+                                Bireysel hesap sahipleri için, limitli adetlerde, belirli kategorilerde ve belirli
+                                tekliflerde</span>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(".girisBtn").click(function (){
+    $(".login-box").css("visibility","visible");
+ });
+ $(".ad").click(function (){
+    $(".login-box").css("visibility","hidden");
+ });
+    </script>
+</body>
+
+</html>
